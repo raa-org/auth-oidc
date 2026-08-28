@@ -1,0 +1,47 @@
+{
+  "name": "@rightandabove/auth-oidc-react",
+  "version": "1.3.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@rightandabove/auth-oidc-core": "1.3.0"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "@reduxjs/toolkit": "^1.9.7",
+    "react-redux": "^8.1.3",
+    "redux-observable": "^2.0.0",
+    "rxjs": "7.8.2"
+  },
+  "devDependencies": {
+    "@rightandabove/auth-oidc-core": "file:../core",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@types/react": "^18.3.0",
+    "react": "^18.3.1",
+    "react-redux": "^8.1.3",
+    "redux-observable": "^2.0.0",
+    "rxjs": "7.8.2",
+    "typescript": "^5.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": {
+    "name": "Right&Above, LLC",
+    "url": "https://rightandabove.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raa-org/auth-oidc.git",
+    "directory": "react"
+  }
+}

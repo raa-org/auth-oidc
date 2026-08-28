@@ -1,0 +1,26 @@
+{
+  "name": "auth-oidc",
+  "description": "OIDC authorization-code login for NestJS hosts, with a headless React client.",
+  "private": true,
+  "author": {
+    "name": "Right&Above, LLC",
+    "url": "https://rightandabove.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raa-org/auth-oidc.git"
+  },
+  "workspaces": [
+    "core",
+    "nest",
+    "react"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
